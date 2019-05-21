@@ -29,6 +29,6 @@ def draw_stuff(img):
 
 
 #task 3: file reading
-img = cv2.imread('test.png')
+img = cv2.imread('images/test.png')
 draw_stuff(img)
 

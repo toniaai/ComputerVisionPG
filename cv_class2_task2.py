@@ -43,7 +43,7 @@ def goodFeatures(img):
     gray = cv.cvtColor(img, cv.COLOR_RGB2GRAY)
     edge = cv.goodFeaturesToTrack(gray, 20, 0.01, 10)
     edge = np.int0(edge)
-    img2 = cv.imread('negro.jpg')
+    img2 = cv.imread('images/negro.jpg')
     for i in edge:
         x, y = i.ravel()
         cv.circle(img, (x,y), 3, 255, -1)
@@ -52,5 +52,5 @@ def goodFeatures(img):
                                                                     
     plt.imshow(img),plt.show()
 
-img = cv.imread('lena.png')
+img = cv.imread('images/lena.png')
 goodFeatures(img)

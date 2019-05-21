@@ -29,7 +29,7 @@ def task1_given(img):
         cv2.destroyAllWindows()
 
 #task 1: file reading
-img = cv2.imread('test.png')
+img = cv2.imread('images/test.png')
 
 # we create a new image with the BGR transformation this way
 img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

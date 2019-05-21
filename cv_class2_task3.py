@@ -18,5 +18,5 @@ def selectROI(img_rgb):
     cv2.imshow('resultado', img_rgb)
     cv2.waitKey(0)
 
-img_rgb = cv2.imread('combo2.jpg')
+img_rgb = cv2.imread('images/combo2.jpg')
 selectROI(img_rgb)

@@ -24,5 +24,5 @@ def canny_thresh(img):
     plt.show()
 
 
-img = cv.imread('lena.jpg')
+img = cv.imread('images/lena.jpg')
 canny_thresh(img)

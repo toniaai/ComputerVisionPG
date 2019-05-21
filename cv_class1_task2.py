@@ -23,7 +23,7 @@ def show_video(cap):
 def save_video(cap):
 
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter('video.avi', fourcc, 20.0, (640,480))
+    out = cv2.VideoWriter('images/video.avi', fourcc, 20.0, (640,480))
 
     while(True):
         ret, frame = cap.read()

@@ -9,8 +9,8 @@ def show_video(cap):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
         # we define the classifiers
-        face_cascade = cv2.CascadeClassifier('haar_frontalface_default.xml')
-        eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+        face_cascade = cv2.CascadeClassifier('haar_classifiers/haar_frontalface_default.xml')
+        eye_cascade = cv2.CascadeClassifier('haar_classifiers/haarcascade_eye.xml')
 
         # set the face detection list
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
